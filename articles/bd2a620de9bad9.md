@@ -1,8 +1,8 @@
 ---
 title: "楽天市場で出品者の情報を一覧表示するChrome拡張を作った"
-emoji: "😺"
+emoji: "🛒"
 type: "idea"
-topics: ["ai","chrome拡張","個人開発","楽天市場"]
+topics: ["chrome拡張機能","個人開発","楽天市場","せどり","typescript"]
 published: true
 ---
 

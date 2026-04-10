@@ -1,8 +1,8 @@
 ---
 title: "TVerの視聴体験を改善するChrome拡張を作った"
-emoji: "🐈"
+emoji: "📺"
 type: "idea"
-topics: ["chrome拡張","アプリ","tver"]
+topics: ["chrome拡張機能","個人開発","tver","javascript","動画"]
 published: true
 ---
 

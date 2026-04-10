@@ -1,8 +1,8 @@
 ---
 title: "YouTubeショートが邪魔すぎたので消すChrome拡張を作った"
-emoji: "🤖"
+emoji: "🚫"
 type: "idea"
-topics: ["ai","chrome拡張","youtube","個人開発","x"]
+topics: ["chrome拡張機能","youtube","個人開発","javascript","生産性"]
 published: true
 ---
 
