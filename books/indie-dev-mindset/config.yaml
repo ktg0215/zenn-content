@@ -1,0 +1,18 @@
+title: "AI時代の個人開発マインドセット ── 18本作って気づいたこと、全部話します"
+summary: "個人開発を続けるための思考法・習慣・マインドセットを、Chrome拡張18本の実体験から語ります。技術書ではなく「続けるための本」。無料で公開します。"
+topics: ["個人開発", "マインドセット", "AI", "副業", "Chrome拡張"]
+price: 0
+cover_image_path: ./cover.png
+published: false
+chapters:
+  - intro
+  - why-indie-dev-now
+  - mindset-shift
+  - embrace-imperfection
+  - ai-as-colleague
+  - knowing-when-to-stop
+  - learn-in-public
+  - surviving-zero-revenue
+  - sustainable-routine
+  - community
+  - outro

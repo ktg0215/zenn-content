@@ -1,0 +1,62 @@
+name: Publish Book 1 on 2026-04-20
+
+on:
+  schedule:
+    # 2026-04-19 15:00 UTC = 2026-04-20 00:00 JST
+    - cron: '0 15 19 4 *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run (do not push)'
+        required: false
+        default: 'false'
+
+jobs:
+  publish-book1:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check if already published
+        id: check
+        run: |
+          if grep -q "published: true" books/ai-chrome-extension-intro/config.yaml; then
+            echo "already_published=true" >> $GITHUB_OUTPUT
+          else
+            echo "already_published=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Set published to true
+        if: steps.check.outputs.already_published == 'false'
+        run: |
+          sed -i 's/published: false/published: true/' books/ai-chrome-extension-intro/config.yaml
+          echo "Updated config.yaml:"
+          grep "published" books/ai-chrome-extension-intro/config.yaml
+
+      - name: Commit and push
+        if: |
+          steps.check.outputs.already_published == 'false' &&
+          github.event.inputs.dry_run != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add books/ai-chrome-extension-intro/config.yaml
+          git commit -m "feat: Book 1 公開 — AIで始めるChrome拡張 個人開発入門"
+          git push origin master
+
+      - name: Summary
+        run: |
+          if [ "${{ steps.check.outputs.already_published }}" = "true" ]; then
+            echo "✅ Book 1 はすでに published: true です。スキップしました。"
+          elif [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            echo "🔍 Dry run: config.yaml の変更を確認しましたが push しませんでした。"
+          else
+            echo "🚀 Book 1 を公開しました (published: true に変更して push)。"
+            echo "URL: https://zenn.dev/ktg/books/ai-chrome-extension-intro"
+          fi

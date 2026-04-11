@@ -1,0 +1,23 @@
+title: "コードが書けなくてもChrome拡張を作れる — AI時代の個人開発入門"
+summary: "AIと対話しながら1週間でChrome拡張を公開するまでの実践ガイド。ノンプログラマーでも18本の拡張を作った著者が、アイデアの見つけ方・開発環境・Chrome Web Store公開・公開後のマーケティングまでを解説します。"
+topics:
+  - chrome拡張機能
+  - 個人開発
+  - ai
+  - バイブコーディング
+  - typescript
+price: 0
+cover_image_path: ./cover.png
+published: false
+toc_depth: 2
+chapters:
+  - intro
+  - why-chrome-extension
+  - idea-with-ai
+  - dev-environment
+  - first-extension
+  - reading-tools
+  - data-tools
+  - publish-to-cws
+  - after-publish
+  - outro

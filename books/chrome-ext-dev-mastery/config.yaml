@@ -1,0 +1,26 @@
+title: "Chrome拡張 開発技術大全 ── Manifest V3時代の設計・実装・テスト完全ガイド"
+summary: "TypeScript・WXT・chrome.* APIの実践パターンを18本の拡張開発経験から体系化。Service Workerのステートレス設計、storage 3層パターン、フリーミアム実装、GA4 Measurement Protocol、デバッグ・テスト・自動リリースまでコード付きで解説する実践書。"
+topics:
+  - chrome拡張機能
+  - typescript
+  - 個人開発
+  - wxt
+  - manifest-v3
+price: 980
+cover_image_path: ./cover.png
+published: false
+toc_depth: 2
+chapters:
+  - intro
+  - mv3-architecture
+  - build-tools
+  - typescript-types
+  - storage-patterns
+  - freemium-implementation
+  - ga4-implementation
+  - content-script-design
+  - sidepanel-offscreen
+  - cookie-privacy
+  - debug-test-release
+  - appendix
+  - outro

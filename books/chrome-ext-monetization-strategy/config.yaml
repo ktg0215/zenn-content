@@ -1,0 +1,23 @@
+title: "Chrome拡張を売るための戦略書 ── 18本を公開して見えたマーケティング・CWS SEO・フリーミアム設計"
+summary: "Chrome拡張機能の収益化に特化した実践書。18本の拡張を個人開発・公開した著者が、Chrome Web Store SEO・フリーミアム設計・リバーストライアル・ペイウォールタイミング・GA4活用・クロスプロモーションまで、実数値とともに解説します。"
+topics:
+  - chrome拡張機能
+  - 個人開発
+  - マーケティング
+  - 収益化
+  - seo
+price: 500
+cover_image_path: ./cover.png
+published: false
+toc_depth: 2
+chapters:
+  - intro
+  - cws-market-research
+  - cws-seo
+  - listing-optimization
+  - localization
+  - freemium-design
+  - paywall-timing
+  - analytics
+  - cross-promotion
+  - outro
