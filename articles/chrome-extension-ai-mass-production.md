@@ -3,7 +3,7 @@ title: "コードが書けなくてもChrome拡張を量産できる開発フロ
 emoji: "🤖"
 type: "idea"
 topics: ["chrome拡張機能", "個人開発", "ai", "バイブコーディング", "claude"]
-published: false
+published: true
 published_at: 2026-04-23 07:00
 ---
 
