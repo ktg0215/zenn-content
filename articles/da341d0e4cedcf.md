@@ -1,5 +1,5 @@
 ---
-title: "WXT + React + TypeScriptでSEOメタ分析Chrome拡張「OnPageX」を作った"
+title: "WXT + React + TypeScriptでSEOメタ分析Chrome拡張を作る方法：OnPageX開発記録"
 emoji: "🔍"
 type: "idea"
 topics: ["chrome拡張機能","seo","個人開発","react","typescript"]

@@ -1,5 +1,5 @@
 ---
-title: "Chrome拡張を17本個人開発して学んだこと：技術・CWS審査・収益化まで"
+title: "Chrome拡張17本を個人開発して学んだこと：技術選定・CWS審査・収益化の実践知識"
 emoji: "🛠️"
 type: "idea"
 topics: ["chrome拡張機能", "個人開発", "typescript", "マーケティング", "収益化"]

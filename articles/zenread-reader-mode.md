@@ -1,5 +1,5 @@
 ---
-title: "Chromeにリーダーモードがないなら作ればいい ── ZenReadというChrome拡張を作った話"
+title: "ZenRead：ChromeのリーダーモードをChrome拡張で自作した開発記録と使い方ガイド"
 emoji: "📖"
 type: "tech"
 topics: ["chrome拡張機能", "react", "typescript", "readability", "webspeechapi"]

@@ -1,5 +1,5 @@
 ---
-title: "CookieJarの実践活用術 ── Web開発・テストで今日から使えるCookie管理テクニック"
+title: "CookieJar活用ガイド：Web開発・テスト環境で今すぐ使えるCookie管理テクニック"
 emoji: "🍪"
 type: "tech"
 topics: ["chrome拡張機能", "cookie", "web開発", "テスト", "privacy"]

@@ -1,5 +1,5 @@
 ---
-title: "YouTubeショートが邪魔すぎたので消すChrome拡張を作った"
+title: "YouTubeショートを非表示にするChrome拡張の作り方：ShortsKiller開発記録"
 emoji: "🚫"
 type: "idea"
 topics: ["chrome拡張機能","youtube","個人開発","javascript","生産性"]

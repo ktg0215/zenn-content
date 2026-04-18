@@ -1,5 +1,5 @@
 ---
-title: "DataPick × Google Sheets連携ガイド ── コードなしでWebデータをスプレッドシートへ"
+title: "DataPickでWebデータをGoogle Sheetsに自動連携する方法：コード不要のスクレイピング入門"
 emoji: "📊"
 type: "tech"
 topics: ["chrome拡張機能", "スクレイピング", "googlesheets", "nocode", "データ収集"]

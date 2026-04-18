@@ -1,5 +1,5 @@
 ---
-title: "Base64エンコードとは？仕組み・使いどころ・JavaScriptでの実装を徹底解説"
+title: "Base64エンコード完全解説：仕組み・使いどころ・JavaScriptでの実装ガイド"
 emoji: "✨"
 type: "tech"
 topics: ["javascript","セキュリティ","初心者向け","base64","webdev"]

@@ -1,5 +1,5 @@
 ---
-title: "Gmailの返信を3秒で終わらせるChrome拡張「SnapReply」を作った話"
+title: "Gmail返信を3秒で終わらせるAI Chrome拡張SnapReplyの作り方と使い方"
 emoji: "⚡"
 type: "tech"
 topics: ["chrome拡張機能", "gmail", "typescript", "react", "productivity"]

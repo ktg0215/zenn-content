@@ -1,5 +1,5 @@
 ---
-title: "TVerの視聴体験を改善するChrome拡張を作った"
+title: "TVer視聴体験を改善するChrome拡張の作り方：倍速・PiP・広告スキップに対応"
 emoji: "📺"
 type: "idea"
 topics: ["chrome拡張機能","個人開発","tver","javascript","動画"]

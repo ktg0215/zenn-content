@@ -1,5 +1,5 @@
 ---
-title: "Chrome Web Store SEOの完全ガイド — 18本の拡張で試したキーワード戦略"
+title: "Chrome Web Store SEO完全ガイド：18本の拡張機能で検証したキーワード戦略と実績"
 emoji: "🔍"
 type: "tech"
 topics: ["chrome拡張機能", "seo", "個人開発", "マーケティング", "typescript"]

@@ -1,5 +1,5 @@
 ---
-title: "コードが書けなくてもChrome拡張を量産できる開発フロー — AI活用の実践"
+title: "AIを活用してChrome拡張を量産する開発フロー：コーディング不要でリリースする実践手順"
 emoji: "🤖"
 type: "idea"
 topics: ["chrome拡張機能", "個人開発", "ai", "バイブコーディング", "claude"]
