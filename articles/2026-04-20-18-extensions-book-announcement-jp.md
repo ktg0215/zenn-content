@@ -3,7 +3,7 @@ title: 18本のChrome拡張を作って学んだこと — 無料本を公開し
 emoji: 📚
 type: tech
 topics: ["chrome拡張機能", "個人開発", "マーケティング", "書籍", "AI"]
-published: false
+published: true
 ---
 
 18本のChrome拡張を開発して、売れる法則が見えてきました。
