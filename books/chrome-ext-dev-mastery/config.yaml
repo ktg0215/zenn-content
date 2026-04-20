@@ -8,7 +8,7 @@ topics:
   - manifest-v3
 price: 980
 cover_image_path: ./cover.png
-published: false
+published: true
 toc_depth: 2
 chapters:
   - intro
