@@ -3,7 +3,7 @@ title: "通知をミュートしてフォーカス時間を守るChrome拡張を
 emoji: "🔕"
 type: "tech"
 topics: ["chrome拡張", "typescript", "react", "個人開発", "生産性"]
-published: false
+published: true
 ---
 
 ## なぜ作ったのか

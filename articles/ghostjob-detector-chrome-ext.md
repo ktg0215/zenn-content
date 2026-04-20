@@ -3,7 +3,7 @@ title: "ゴーストジョブ（幽霊求人）を自動検出するChrome拡張
 emoji: "👻"
 type: "tech"
 topics: ["chrome拡張", "typescript", "react", "個人開発", "求職"]
-published: false
+published: true
 ---
 
 ## なぜ作ったのか

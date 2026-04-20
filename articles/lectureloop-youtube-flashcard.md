@@ -3,7 +3,7 @@ title: "YouTube講義をAIで要約してスタディノートを作るChrome拡
 emoji: "📚"
 type: "tech"
 topics: ["chrome拡張", "typescript", "react", "個人開発", "ai"]
-published: false
+published: true
 ---
 
 ## なぜ作ったのか

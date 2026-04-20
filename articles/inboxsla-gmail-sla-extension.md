@@ -3,7 +3,7 @@ title: "メール応答時間を自動トラッキングするChrome拡張を作
 emoji: "📬"
 type: "tech"
 topics: ["chrome拡張", "typescript", "react", "個人開発", "生産性"]
-published: false
+published: true
 ---
 
 ## なぜ作ったのか

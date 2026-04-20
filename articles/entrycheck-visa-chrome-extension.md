@@ -3,7 +3,7 @@ title: "190カ国のビザ・入国要件をブラウザ内で即確認するChr
 emoji: "🛂"
 type: "tech"
 topics: ["chrome拡張", "typescript", "react", "個人開発", "旅行"]
-published: false
+published: true
 ---
 
 ## なぜ作ったのか
