@@ -165,6 +165,9 @@ MV3 は仕様を読むと「複雑になった」と感じますが、ハマり�
 
 Procshot を作って 6 ヶ月、いまではこれらの落とし穴を踏まずに新規拡張を立ち上げられるようになりました。誰かが同じ場所でつまずく時間を、少しでも減らせたらと思います。
 
+Procshot を試してみたい方はこちらから:
+https://chromewebstore.google.com/detail/ieblehdloggcpmkncplccjofeoakhkll
+
 ---
 
 *この記事の英語版は [dev-tools-hub.xyz](https://dev-tools-hub.xyz) の Dev.to にもあります。*
