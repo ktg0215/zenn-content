@@ -19,7 +19,7 @@ Web開発・QAエンジニアなら一度はこんな場面に遭遇したこと
 
 この記事では、MV3対応のCookie管理拡張機能「CookieJar」を使った実践的なワークフローをご紹介します。
 
-https://chromewebstore.google.com/detail/cookiejar/lhngfkchfepfjdfhimconagoejemofg
+https://chromewebstore.google.com/detail/cookiejar/lhngfkchfepfjjdfhimconagoejemofg
 
 ## CookieJarの主要機能
 
@@ -92,6 +92,6 @@ CookieJarは、EditThisCookieの後継として現場のWeb開発・QAワーク�
 
 ぜひChrome Web Storeからインストールして、日々の開発効率向上にお役立てください。
 
-https://chromewebstore.google.com/detail/cookiejar/lhngfkchfepfjdfhimconagoejemofg
+https://chromewebstore.google.com/detail/cookiejar/lhngfkchfepfjjdfhimconagoejemofg
 
 より詳しい機能一覧やS-Hubが提供する他のChrome拡張機能については、こちらもご覧ください：https://dev-tools-hub.xyz
