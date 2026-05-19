@@ -3,7 +3,7 @@ title: "メールのSLAを個人で管理するChrome拡張を作った — Muta
 emoji: "📬"
 type: "tech"
 topics: ["chrome拡張機能", "typescript", "gmail", "個人開発", "webdev"]
-published: false
+published: true
 published_at: "2026-05-28 09:00"
 ---
 

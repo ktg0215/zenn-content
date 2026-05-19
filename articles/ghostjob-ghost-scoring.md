@@ -3,7 +3,7 @@ title: "採用していない求人を見抜くChrome拡張を作った — ゴ�
 emoji: "👻"
 type: "tech"
 topics: ["chrome拡張機能", "typescript", "個人開発", "就活", "webdev"]
-published: false
+published: true
 published_at: "2026-05-21 09:00"
 ---
 

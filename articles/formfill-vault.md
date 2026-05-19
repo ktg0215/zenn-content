@@ -4,7 +4,6 @@ emoji: "🔐"
 type: "tech"
 topics: ["chrome拡張機能", "typescript", "セキュリティ", "個人開発"]
 published: false
-published_at: "2026-05-17 09:00"
 ---
 
 住所・会社名・電話番号など、繰り返し入力するWebフォームを1ショートカットで自動入力するChrome拡張「FormFill Vault」を作りました。AES-256-GCM暗号化をローカルで実装したときの詰まりポイントを書きます。
