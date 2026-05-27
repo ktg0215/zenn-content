@@ -4,7 +4,6 @@ emoji: "📖"
 type: "tech"
 topics: ["chrome拡張機能", "react", "typescript", "readability", "webspeechapi"]
 published: false
-published_at: "2026-04-17 09:00"
 ---
 
 ## はじめに

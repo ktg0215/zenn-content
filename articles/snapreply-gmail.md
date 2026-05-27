@@ -4,7 +4,6 @@ emoji: "⚡"
 type: "tech"
 topics: ["chrome拡張機能", "gmail", "typescript", "react", "productivity"]
 published: false
-published_at: "2026-04-15 09:00"
 ---
 
 ## はじめに

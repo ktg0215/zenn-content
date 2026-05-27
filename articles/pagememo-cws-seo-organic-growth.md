@@ -4,7 +4,6 @@ emoji: "🔍"
 type: "tech"
 topics: ["chrome拡張機能", "seo", "個人開発", "i18n", "マーケティング"]
 published: false
-published_at: "2026-05-25 09:00"
 ---
 
 ## マーケをしていない拡張が、いちばん伸びた

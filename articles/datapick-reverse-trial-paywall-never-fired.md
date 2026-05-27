@@ -4,7 +4,6 @@ emoji: "🪤"
 type: "tech"
 topics: ["chrome拡張機能", "manifestv3", "個人開発", "extensionpay", "マネタイズ"]
 published: false
-published_at: "2026-05-28 09:00"
 ---
 
 ## 30日間、誰にもpaywallが表示されていなかった

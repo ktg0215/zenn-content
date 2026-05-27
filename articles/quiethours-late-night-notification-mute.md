@@ -4,7 +4,6 @@ emoji: "🌙"
 type: "tech"
 topics: ["chrome拡張機能", "javascript", "typescript", "個人開発"]
 published: false
-published_at: "2026-05-24 09:00"
 ---
 
 「深夜0時以降はGoogleカレンダーの通知を切りたい」という要件を実装しようとして、Web Notifications APIではできないことに気づいた。

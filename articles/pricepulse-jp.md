@@ -4,7 +4,6 @@ emoji: "💰"
 type: "tech"
 topics: ["chrome拡張機能", "javascript", "個人開発", "typescript"]
 published: false
-published_at: "2026-05-10 09:00"
 ---
 
 日本の主要ECサイト4サイトの価格履歴をKeepa風に追跡するChrome拡張「PricePulse JP」を作りました。実装で詰まったポイントを書き残します。
