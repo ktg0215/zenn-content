@@ -3,7 +3,7 @@ title: "リバーストライアルのpaywallがMV3で一度も表示されな�
 emoji: "🪤"
 type: "tech"
 topics: ["chrome拡張機能", "manifestv3", "個人開発", "extensionpay", "マネタイズ"]
-published: true
+published: false
 published_at: "2026-05-28 09:00"
 ---
 

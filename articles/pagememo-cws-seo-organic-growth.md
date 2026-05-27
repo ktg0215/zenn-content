@@ -3,7 +3,7 @@ title: "広告ゼロのChrome拡張を2.7倍に伸ばしたCWS SEOの話"
 emoji: "🔍"
 type: "tech"
 topics: ["chrome拡張機能", "seo", "個人開発", "i18n", "マーケティング"]
-published: true
+published: false
 published_at: "2026-05-25 09:00"
 ---
 
