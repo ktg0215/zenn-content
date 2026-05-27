@@ -3,7 +3,7 @@ title: "クリップボード履歴をFuse.jsでfuzzy検索するChrome拡張を
 emoji: "📋"
 type: "tech"
 topics: ["chrome拡張", "個人開発", "typescript", "fusejs", "wxt"]
-published: true
+published: false
 ---
 
 ## 「さっきコピーしたやつ、何だったっけ」問題

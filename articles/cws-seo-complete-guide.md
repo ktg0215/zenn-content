@@ -3,7 +3,7 @@ title: "Chrome Web Store SEO完全ガイド：18本の拡張機能で検証し�
 emoji: "🔍"
 type: "tech"
 topics: ["chrome拡張機能", "seo", "個人開発", "マーケティング", "typescript"]
-published: true
+published: false
 published_at: 2026-04-25 07:00
 ---
 

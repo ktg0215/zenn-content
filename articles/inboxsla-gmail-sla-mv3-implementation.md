@@ -3,7 +3,7 @@ title: "Gmailに「返信SLA」を持たせる拡張を作った話 — alarms +
 emoji: "📧"
 type: "tech"
 topics: ["chromeextension", "gmail", "個人開発", "typescript", "wxt"]
-published: true
+published: false
 ---
 
 ## 「あの案件、いつまでに返信って言ったっけ？」

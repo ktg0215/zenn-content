@@ -3,7 +3,7 @@ title: "paywallを出して転換0%だった話 ── データから学ぶフ�
 emoji: "📖"
 type: "idea"
 topics: ["chrome拡張", "個人開発", "saas", "monetization", "paywall"]
-published: true
+published: false
 ---
 
 ## はじめに

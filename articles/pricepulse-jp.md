@@ -3,7 +3,7 @@ title: "Amazon.co.jp・楽天・Yahoo!・メルカリの価格推移を追跡す
 emoji: "💰"
 type: "tech"
 topics: ["chrome拡張機能", "javascript", "個人開発", "typescript"]
-published: true
+published: false
 published_at: "2026-05-10 09:00"
 ---
 
