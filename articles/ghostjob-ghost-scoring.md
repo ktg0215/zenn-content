@@ -3,8 +3,7 @@ title: "採用していない求人を見抜くChrome拡張を作った — ゴ�
 emoji: "👻"
 type: "tech"
 topics: ["chrome拡張機能", "typescript", "個人開発", "就活", "webdev"]
-published: true
-published_at: "2026-05-21 09:00"
+published: false
 ---
 
 求人票が「ずっと載っている」のに実際には採用していない、いわゆる「ゴーストジョブ」の問題を解決するChrome拡張「[GhostJob](https://chromewebstore.google.com/detail/mdjchaohgneaiflafheajamfomeccach)」を作りました。Indeed・LinkedIn・Glassdoorの求人カードにゴーストスコア（0〜100）を表示します。今回はスコア計算ロジックとコンテンツスクリプトの実装ポイントを書きます。

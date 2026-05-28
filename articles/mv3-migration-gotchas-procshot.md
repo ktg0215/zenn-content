@@ -3,7 +3,7 @@ title: "Manifest V3 移行で誰も教えてくれなかった落とし穴 — P
 emoji: 🔧
 type: tech
 topics: ["chrome拡張機能", "manifestv3", "typescript", "個人開発", "バイブコーディング"]
-published: true
+published: false
 ---
 
 Procshot というスクリーンショット拡張を作ったとき、自分は最初から Manifest V3 で書きました。MV2 から MV3 への移行記事はネット上にたくさんありますが、実際に手を動かしてみると、誰も書いていない地味な落とし穴で何度もハマりました。
