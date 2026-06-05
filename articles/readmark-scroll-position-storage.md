@@ -90,3 +90,4 @@ content script を `document_idle` で注入して復元しても、**画像や�
 
 ReadMark(Chrome ウェブストア):
 https://chromewebstore.google.com/detail/inejhohffndeacbihghjcobndpoejdfn
+
