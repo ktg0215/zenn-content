@@ -3,12 +3,13 @@ title: "paywallを出して転換0%だった話 ── データから学ぶフ�
 emoji: "📖"
 type: "idea"
 topics: ["chrome拡張", "個人開発", "saas", "monetization", "paywall"]
-published: false
+published: true
+published_at: "2026-06-24"
 ---
 
 ## はじめに
 
-個人開発でChrome拡張機能を25本ほど運用しています。その中の一本「ZenRead」というリーダーモード拡張で、ある時期からPro機能を用意し、popupとリーダー画面でPro案内（いわゆるpaywall）を表示するようにしました。
+個人開発でChrome拡張機能を36本CWSで公開しています（2026年6月時点）。その中の一本「ZenRead」というリーダーモード拡張で、ある時期からPro機能を用意し、popupとリーダー画面でPro案内（いわゆるpaywall）を表示するようにしました。
 
 直近30日のデータを集計したところ、こんな数字が出ました。
 
@@ -153,8 +154,12 @@ ZenRead は無料で全機能ほぼ使えますので、リーダーモードが
 
 https://chromewebstore.google.com/detail/zenread/adoiakplckmoahmiainobfpmdomnhomj
 
-S-Hub では他にも25本ほどの Chrome 拡張を運用しています。気が向いたら覗いてみてください。
+S-Hub では他にも36本の Chrome 拡張を公開しています。気が向いたら覗いてみてください。
 
 https://dev-tools-hub.xyz/
 
 次回は paywall を改修した後の数字を、改善前との比較で公開します（転換が出れば）。
+
+---
+
+フリーミアム設計・paywall戦略の考え方をまとめた本も書きました（¥500）: https://zenn.dev/ktg/books/chrome-ext-monetization-strategy
