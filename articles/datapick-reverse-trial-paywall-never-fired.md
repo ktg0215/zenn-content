@@ -3,7 +3,8 @@ title: "リバーストライアルのpaywallがMV3で一度も表示されな�
 emoji: "🪤"
 type: "tech"
 topics: ["chrome拡張機能", "manifestv3", "個人開発", "extensionpay", "マネタイズ"]
-published: false
+published: true
+published_at: "2026-06-26"
 ---
 
 ## 30日間、誰にもpaywallが表示されていなかった
@@ -145,3 +146,7 @@ chrome.alarms.onAlarm.addListener(handler);
 
 DataPick はこちらで配布している。
 https://chromewebstore.google.com/detail/epoehadeccangbpjldlbkapnakndbpkf
+
+---
+
+MV3移行・paywall設計・マネタイズ戦略をまとめた本も書きました（¥500）: https://zenn.dev/ktg/books/chrome-ext-monetization-strategy
