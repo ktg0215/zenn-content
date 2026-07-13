@@ -1,0 +1,81 @@
+name: Zenn Article Drip (1/day)
+
+# 再idle防止: verified queue(drip-queue.txt)の先頭1件を1日1本 published:true にflipする。
+# cron は内容を生成しない。marketing が queue に載せた記事のみ対象。
+# 既存 publish-book1.yml(books) / cc-company schedule.json(SNS) とは別機構・非衝突。
+
+on:
+  schedule:
+    - cron: '0 1 * * *'   # 01:00 UTC = 10:00 JST 毎日
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run (flip はするが commit/push しない)'
+        required: false
+        default: 'false'
+
+# 同時実行を禁止(二重flip防止)
+concurrency:
+  group: zenn-article-drip
+  cancel-in-progress: false
+
+jobs:
+  drip:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Flip next queued article (先頭1件のみ)
+        id: flip
+        run: |
+          set -euo pipefail
+          QUEUE="drip-queue.txt"
+          if [ ! -f "$QUEUE" ]; then echo "queue file なし"; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+
+          # 先頭の non-comment / non-blank 行 = 次の slug
+          SLUG="$(grep -vE '^[[:space:]]*#|^[[:space:]]*$' "$QUEUE" | head -1 | tr -d '[:space:]' || true)"
+          if [ -z "$SLUG" ]; then echo "queue 空 → no-op"; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          echo "次の slug: $SLUG"
+
+          # queue から当該 slug の最初の一致行を1つだけ削除(必ず前進・bad entry も除去=自己修復)
+          awk -v s="$SLUG" 'BEGIN{done=0}{l=$0; gsub(/^[[:space:]]+|[[:space:]]+$/,"",l); if(!done && l==s){done=1; next} print}' "$QUEUE" > "$QUEUE.tmp"
+          mv "$QUEUE.tmp" "$QUEUE"
+
+          ART="articles/${SLUG}.md"
+          if [ ! -f "$ART" ]; then
+            echo "::warning::記事なし $ART → queue から除去のみ・flip せず"
+            echo "changed=queue" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          if ! grep -qE '^published: false$' "$ART"; then
+            echo "::warning::$ART は published:false でない(既公開?) → queue から除去のみ・flip せず"
+            echo "changed=queue" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+
+          # frontmatter の該当1行だけ flip
+          sed -i 's/^published: false$/published: true/' "$ART"
+          echo "flip 完了: $ART -> published: true"
+          grep -m1 '^published:' "$ART"
+          echo "changed=flip" >> "$GITHUB_OUTPUT"
+          echo "slug=$SLUG" >> "$GITHUB_OUTPUT"
+
+      - name: Commit and push
+        if: steps.flip.outputs.changed != 'false' && github.event.inputs.dry_run != 'true'
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add drip-queue.txt articles/
+          if git diff --cached --quiet; then echo "変更なし → commit skip"; exit 0; fi
+          if [ "${{ steps.flip.outputs.changed }}" = "flip" ]; then
+            MSG="chore(zenn-drip): publish ${{ steps.flip.outputs.slug }} (1/day drip)"
+          else
+            MSG="chore(zenn-drip): advance queue (invalid entry removed)"
+          fi
+          git commit -m "$MSG"
+          git push
+          echo "pushed: $MSG"

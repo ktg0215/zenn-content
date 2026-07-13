@@ -1,0 +1,19 @@
+# Zenn 記事 drip 公開キュー（marketing 管理・verified のみ）
+#
+# 目的: 再idle防止。1日1本ずつ自動で published:true に flip する。
+#
+# 使い方（marketing）:
+#   - 内容承認済み(verified)の記事だけを、1行1件・上から公開したい順に slug を追記する。
+#   - slug = articles/<slug>.md の <slug> 部分（拡張子 .md は書かない）。
+#     例: 132441dc79fc17
+#   - ここに載っていない記事は絶対に flip されない（cron は内容を生成しない）。
+#
+# 挙動（GHA .github/workflows/zenn-article-drip.yml）:
+#   - 毎日 JST10:00 に「先頭の1件」だけを処理する（一気flip しない）。
+#   - その記事が published:false なら published:true に flip → この行を削除 → commit/push（Zenn が同期公開）。
+#   - 記事が存在しない/既に published:true の場合はその行だけ削除して当日は flip しない（自己修復）。
+#   - キューが空なら何もしない（no-op）。
+#
+# コメント(#)と空行は無視。手動実行は Actions の workflow_dispatch（dry_run 可）。
+#
+# --- ここから下に slug を追記（marketing のみ） ---
