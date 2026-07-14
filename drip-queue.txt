@@ -17,4 +17,3 @@
 # コメント(#)と空行は無視。手動実行は Actions の workflow_dispatch（dry_run 可）。
 #
 # --- ここから下に slug を追記（marketing のみ） ---
-promptstash-save-reuse-chatgpt-ja

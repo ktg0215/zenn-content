@@ -3,7 +3,7 @@ title: "ChatGPTのプロンプトを保存・再利用する方法（毎回打�
 emoji: "📝"
 type: "idea"
 topics: ["chatgpt", "ai", "生産性", "chrome拡張", "個人開発"]
-published: false
+published: true
 ---
 ## 同じプロンプトを毎回打ち直していませんか
 
