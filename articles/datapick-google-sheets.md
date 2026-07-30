@@ -3,7 +3,7 @@ title: "DataPickでWebデータをGoogle Sheetsに自動連携する方法：コ
 emoji: "📊"
 type: "tech"
 topics: ["chrome拡張機能", "スクレイピング", "googlesheets", "nocode", "データ収集"]
-published: false
+published: true
 ---
 
 ## はじめに
