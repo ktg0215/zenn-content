@@ -3,7 +3,7 @@ title: "深夜の通知を自動でミュートするChrome拡張を作った �
 emoji: "🌙"
 type: "tech"
 topics: ["chrome拡張機能", "javascript", "typescript", "個人開発"]
-published: false
+published: true
 ---
 
 「深夜0時以降はGoogleカレンダーの通知を切りたい」という要件を実装しようとして、Web Notifications APIではできないことに気づいた。
