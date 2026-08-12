@@ -17,7 +17,6 @@
 # コメント(#)と空行は無視。手動実行は Actions の workflow_dispatch（dry_run 可）。
 #
 # --- ここから下に slug を追記（marketing のみ） ---
-zenread-reader-mode
 mv3-migration-gotchas-procshot
 ghostjob-ghost-scoring
 clipstack-fuse-clipboard-history

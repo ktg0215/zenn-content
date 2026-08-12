@@ -3,7 +3,7 @@ title: "ZenRead：ChromeのリーダーモードをChrome拡張で自作した�
 emoji: "📖"
 type: "tech"
 topics: ["chrome拡張機能", "react", "typescript", "readability", "webspeechapi"]
-published: false
+published: true
 ---
 
 ## はじめに
