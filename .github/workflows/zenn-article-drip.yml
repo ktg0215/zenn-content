@@ -79,3 +79,63 @@ jobs:
           git commit -m "$MSG"
           git push
           echo "pushed: $MSG"
+
+      # 🔴 2026-08-17 追加 — flip できたことは、Zenn が受け取ったことを意味しない。
+      #
+      # 実例: quiethours-google-calendar-overlay は repo で published:true・queue から除去済だが、
+      #       Zenn 側は「投稿数の上限に達したためデプロイされませんでした」で受け取っていない。
+      #       それまで本 workflow は flip の成否しか見ておらず、**誰も再投入しない限り二度と出ない**
+      #       状態を静かに作っていた（実測: published:true 42本中 1本が Zenn 上に不在）。
+      #
+      # ⇒ push 後に **Zenn 上の実在** を確かめ、確かめられなければ **元に戻す**（queue に戻し published:false へ）。
+      #    翌日の drip が同じ記事を再試行する＝上限が原因なら自然に解ける。
+      - name: Verify on Zenn (取り込まれなければ queue に戻す)
+        if: steps.flip.outputs.changed == 'flip' && github.event.inputs.dry_run != 'true'
+        env:
+          ZENN_USER: ${{ vars.ZENN_USER || 'ktg0215' }}
+          SLUG: ${{ steps.flip.outputs.slug }}
+        run: |
+          set -uo pipefail
+          URL="https://zenn.dev/${ZENN_USER}/articles/${SLUG}"
+
+          code() { curl -s -o /dev/null -w '%{http_code}' -L --max-time 20 "$1"; }
+
+          # 🔴 対照を先に測る。判別子が壊れていたら「無い」と断定しない（未走査を 0件 と言わない）。
+          NEG="https://zenn.dev/${ZENN_USER}/articles/zzz-never-exists-$(date +%s)"
+          NEG_CODE="$(code "$NEG")"
+          echo "陰性対照: $NEG -> HTTP $NEG_CODE（期待: 404）"
+          if [ "$NEG_CODE" = "200" ]; then
+            echo "::warning::陰性対照が 200 を返した＝判別子が壊れている。**戻さずに終了する**（誤って公開を取り消さないため）"
+            exit 0
+          fi
+
+          # Zenn の取り込みは push 後 非同期。十分 待つ。
+          LIVE=0
+          for i in $(seq 1 20); do
+            C="$(code "$URL")"
+            echo "  試行 $i/20: HTTP $C  $URL"
+            if [ "$C" = "200" ]; then LIVE=1; break; fi
+            sleep 30
+          done
+
+          if [ "$LIVE" = "1" ]; then
+            echo "🟢 Zenn 上で確認: $URL"
+            exit 0
+          fi
+
+          echo "::error::Zenn が受け取っていません（10分 待って非 200）: $URL"
+          echo "戻します: published:true -> false / queue の先頭へ再投入"
+
+          ART="articles/${SLUG}.md"
+          sed -i 's/^published: true$/published: false/' "$ART"
+          # queue の **先頭** に戻す（次の実行で再試行される）
+          printf '%s\n' "$SLUG" | cat - drip-queue.txt > drip-queue.tmp && mv drip-queue.tmp drip-queue.txt
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add drip-queue.txt "$ART"
+          git commit -m "revert(zenn-drip): ${SLUG} は Zenn に取り込まれず -> queue に戻す"
+          git push
+
+          # 🔴 赤で終える。静かに戻すだけだと、上限が続いている間 毎日 同じ空振りを繰り返し、誰も気づかない。
+          exit 1
