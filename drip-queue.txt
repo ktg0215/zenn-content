@@ -1,4 +1,3 @@
-quiethours-google-calendar-overlay
 # Zenn 記事 drip 公開キュー（marketing 管理・verified のみ）
 #
 # 目的: 再idle防止。1日1本ずつ自動で published:true に flip する。
