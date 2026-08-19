@@ -3,7 +3,7 @@ title: "メールのSLAを個人で管理するChrome拡張を作った — Muta
 emoji: "📬"
 type: "tech"
 topics: ["chrome拡張機能", "typescript", "gmail", "個人開発", "webdev"]
-published: false
+published: true
 ---
 
 フリーランスやクライアントワークをしていると、「あのメール、いつ返信すればいいんだっけ」問題が地味に発生します。有料のSLAツールを個人で使うのは大げさなので、Gmailのスレッドに直接SLA残時間バッジを表示するChrome拡張「[InboxSLA](https://chromewebstore.google.com/detail/fooenikjagbabhodgpohljldfbpggagi)」を作りました。今回はGmail DOMの解析とMutationObserverの実装を中心に書きます。
