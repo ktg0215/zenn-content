@@ -23,7 +23,7 @@ title: "はじめに — この本で作れるようになること"
 
 - TypeScript・Reactの基礎文法（AIに任せるのでほぼ不要）
 - ChromeDriver・Selenium等のブラウザ自動化（拡張機能とは別物）
-- 収益化・フリーミアム設計の詳細（続刊「[Chrome拡張を売るための戦略書](https://zenn.dev/ktg/books/chrome-ext-monetization-strategy)」で扱います）
+- 収益化・フリーミアム設計の詳細（続刊「Chrome拡張を売るための戦略書」で扱っていましたが、現在は販売を停止しています）
 
 ## 著者について
 

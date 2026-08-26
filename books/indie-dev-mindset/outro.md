@@ -45,8 +45,7 @@ title: "おわりに — 明日もコードを書くために"
 技術的な実装を学びたい方は、シリーズの他の本をご覧ください：
 
 - [Book 1「AIで始めるChrome拡張 個人開発入門」（無料）](https://zenn.dev/ktg/books/ai-chrome-extension-intro) — 最初の1本の作り方
-- [Book 2「Chrome拡張を売るための戦略書」（¥500）](https://zenn.dev/ktg/books/chrome-ext-monetization-strategy) — CVRと収益化の設計
-- [Book 3「Chrome拡張 開発技術大全」（¥980）](https://zenn.dev/ktg/books/chrome-ext-dev-mastery) — 実装パターンの完全体系化
+- [Book 3「Chrome拡張 開発技術大全」（¥1,000）](https://zenn.dev/ktg/books/chrome-ext-dev-mastery) — 実装パターンの完全体系化
 
 - S-Hub: [dev-tools-hub.xyz](https://dev-tools-hub.xyz)
 - X（@ktg_shota）: 開発の日常と新しい気づきを発信しています

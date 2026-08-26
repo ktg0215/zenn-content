@@ -70,10 +70,9 @@ title: "おわりに — パターンを持つことの意味"
 - **Zennフォロー**: 新パターンの追加・加筆通知は [zenn.dev/ktg](https://zenn.dev/ktg) から
 - **X（@ktg_shota）**: 実装ハマりや新発見は随時ポストしています
 
-技術的な開発から収益化まで興味がある方は、姉妹本もご覧ください：
+Chrome拡張の作り方から知りたい方は、姉妹本もご覧ください：
 
 - [Book 1「AIで始めるChrome拡張 個人開発入門」（無料）](https://zenn.dev/ktg/books/ai-chrome-extension-intro)
-- [Book 2「Chrome拡張を売るための戦略書」（¥500）](https://zenn.dev/ktg/books/chrome-ext-monetization-strategy)
 
 ---
 
