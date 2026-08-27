@@ -46,7 +46,7 @@ title: "おわりに — 売れる拡張を作り続けるために"
 本書の内容は随時アップデートする予定です。更新通知を受け取るには：
 
 - **Zennのフォロー**: [zenn.dev/ktg](https://zenn.dev/ktg) をフォローすると新章追加や加筆時に通知が届きます
-- **X（Twitter）**: [@ktg_shota](https://x.com) で拡張機能の開発・運用に関する知見を随時発信しています
+- **X（Twitter）**: [@ktg_s0215](https://x.com/ktg_s0215) で拡張機能の開発・運用に関する知見を随時発信しています
 
 Chrome拡張の開発手順については、姉妹本 [**「AIで始めるChrome拡張 個人開発入門」**（無料）](https://zenn.dev/ktg/books/ai-chrome-extension-intro) をどうぞ。
 

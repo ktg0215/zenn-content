@@ -48,7 +48,7 @@ title: "おわりに — 明日もコードを書くために"
 - [Book 3「Chrome拡張 開発技術大全」（¥1,000）](https://zenn.dev/ktg/books/chrome-ext-dev-mastery) — 実装パターンの完全体系化
 
 - S-Hub: [dev-tools-hub.xyz](https://dev-tools-hub.xyz)
-- X（@ktg_shota）: 開発の日常と新しい気づきを発信しています
+- X（@ktg_s0215）: 開発の日常と新しい気づきを発信しています
 
 ---
 
