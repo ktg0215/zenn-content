@@ -8,7 +8,7 @@ topics:
   - seo
 price: 500
 cover_image_path: ./cover.png
-published: false
+published: true
 toc_depth: 2
 chapters:
   - intro

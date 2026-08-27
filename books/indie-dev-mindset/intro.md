@@ -38,6 +38,7 @@ Chrome拡張を18本作って、収益化して、失敗して、また作って
 ## 姉妹本との関係
 
 - [Book 1「AIで始めるChrome拡張 個人開発入門」（無料）](https://zenn.dev/ktg/books/ai-chrome-extension-intro) — 最初の1本の作り方
+- [Book 2「Chrome拡張を売るための戦略書」](https://zenn.dev/ktg/books/chrome-ext-monetization-strategy) — 収益化の設計
 - [Book 3「Chrome拡張 開発技術大全」（¥1,000）](https://zenn.dev/ktg/books/chrome-ext-dev-mastery) — 実装パターンの体系化
 - **本書（Book 4）** — 続けるためのマインドセット
 

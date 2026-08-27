@@ -43,7 +43,7 @@ AIがコードを書いてくれる時代に、「プログラムを書けるこ
 
 私が作った18本の拡張機能はすべて [S-Hub（dev-tools-hub.xyz）](https://dev-tools-hub.xyz) で公開しています。実装の参考にどうぞ。
 
-収益化・フリーミアム設計・CWS SEOについては、続刊「**Chrome拡張を売るための戦略書**」で扱っていましたが、現在は販売を停止しています。
+収益化・フリーミアム設計・CWS SEOについては、続刊「[**Chrome拡張を売るための戦略書**](https://zenn.dev/ktg/books/chrome-ext-monetization-strategy)」で詳しく解説しています。
 
 ---
 
