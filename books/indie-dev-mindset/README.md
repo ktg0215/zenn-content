@@ -150,5 +150,5 @@ Book 1〜3（ダーク×テック系）と対比して、Book 4はエッセイ�
 
 - Book 1（無料）: `C:/Company/zenn-content/books/ai-chrome-extension-intro/`
 - Book 2（¥500）: `C:/Company/zenn-content/books/chrome-ext-monetization-strategy/`
-- Book 3（¥980）: `C:/Company/zenn-content/books/chrome-ext-dev-mastery/`
+- Book 3（¥1,000）: `C:/Company/zenn-content/books/chrome-ext-dev-mastery/`
 - Book構成プラン: `C:/Company/.company/marketing/campaigns/zenn-books-plan.md`
