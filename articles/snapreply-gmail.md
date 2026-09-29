@@ -6,6 +6,8 @@ topics: ["chrome拡張機能", "gmail", "typescript", "react", "productivity"]
 published: true
 ---
 
+> 2026-10 追記: 最新の使い方は、Gmail の標準テンプレート／GAS／拡張の 3 つを比べた記事にまとめました → https://zenn.dev/ktg/articles/gmail-teikeibun-3-ways
+
 ## はじめに
 
 「承知しました。対応いたします。」「ご確認ありがとうございます。」「添付ファイルをお送りします。」
