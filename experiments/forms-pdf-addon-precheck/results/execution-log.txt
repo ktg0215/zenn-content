@@ -1,0 +1,81 @@
+# forms-pdf-precheck 実行ログ（Apps Script エディタ「実行ログ」パネルから転記）
+# 注: 1 回目の実行（0:37:14, 元の Code.gs = DriveApp 版）は
+#   Exception: Specified permissions are not sufficient to call DriveApp.createFolder.
+#   Required permissions: https://www.googleapis.com/auth/drive  (runPdfCheck @ コード.gs:38)
+# で失敗（run1-drivefile-error.png）。以下は Drive 高度なサービス v3 版に差し替えた後の実行。
+
+## 実行 #2（Drive 高度なサービス版・初回）
+0:50:36	お知らせ	実行開始
+0:50:37	デバッグ	convert:A_webfont: 3ms
+0:50:40	情報	{"variant":"A_webfont","label":"@font-face Noto Sans JP + base64画像 + A4 CSS","htmlBytes":3051,"pdfBytes":244208,"convertMs":5,"saveMs":1506,"totalMs":1511,"within10s":true,"pdfUrl":"https://drive.google.com/file/d/1gFpAhxkqupUopanFn_lOKmvye_eMmzvb/view?usp=drivesdk"}
+0:50:40	デバッグ	convert:B_nofont: 4ms
+0:50:42	情報	{"variant":"B_nofont","label":"Webフォント指定なし（既定フォント）+ base64画像 + A4 CSS","htmlBytes":2871,"pdfBytes":88322,"convertMs":6,"saveMs":1373,"totalMs":1379,"within10s":true,"pdfUrl":"https://drive.google.com/file/d/1VPXuOXnFBVVvYzbzapF37-0rfOyaD7iQ/view?usp=drivesdk"}
+0:50:42	情報	=== forms-pdf-precheck summary ===
+{
+  "ranAt": "2026-09-30T00:50:37+09:00",
+  "wallClockMs": 5906,
+  "folderUrl": "https://drive.google.com/drive/folders/1fdUft6B1JJ9xknhQMNMagWxvAzm_iB7L",
+  "results": [
+    {
+      "variant": "A_webfont",
+      "label": "@font-face Noto Sans JP + base64画像 + A4 CSS",
+      "htmlBytes": 3051,
+      "pdfBytes": 244208,
+      "convertMs": 5,
+      "saveMs": 1506,
+      "totalMs": 1511,
+      "within10s": true,
+      "pdfUrl": "https://drive.google.com/file/d/1gFpAhxkqupUopanFn_lOKmvye_eMmzvb/view?usp=drivesdk"
+    },
+    {
+      "variant": "B_nofont",
+      "label": "Webフォント指定なし（既定フォント）+ base64画像 + A4 CSS",
+      "htmlBytes": 2871,
+      "pdfBytes": 88322,
+      "convertMs": 6,
+      "saveMs": 1373,
+      "totalMs": 1379,
+      "within10s": true,
+      "pdfUrl": "https://drive.google.com/file/d/1VPXuOXnFBVVvYzbzapF37-0rfOyaD7iQ/view?usp=drivesdk"
+    }
+  ]
+}
+0:50:43	お知らせ	実行完了
+
+## 実行 #3（Drive 高度なサービス版・2 回目、ばらつき確認）
+0:51:23	お知らせ	実行開始
+0:51:24	デバッグ	convert:A_webfont: 6ms
+0:51:27	情報	{"variant":"A_webfont","label":"@font-face Noto Sans JP + base64画像 + A4 CSS","htmlBytes":3051,"pdfBytes":244208,"convertMs":9,"saveMs":1895,"totalMs":1904,"within10s":true,"pdfUrl":"https://drive.google.com/file/d/1qkE75oGKAOXyaDnR0iBzt2rEWLWIBlUw/view?usp=drivesdk"}
+0:51:27	デバッグ	convert:B_nofont: 2ms
+0:51:30	情報	{"variant":"B_nofont","label":"Webフォント指定なし（既定フォント）+ base64画像 + A4 CSS","htmlBytes":2871,"pdfBytes":88322,"convertMs":4,"saveMs":1761,"totalMs":1765,"within10s":true,"pdfUrl":"https://drive.google.com/file/d/1smJ0QLpAPl0waW9_P2zhAKGWvGZzT9MZ/view?usp=drivesdk"}
+0:51:30	情報	=== forms-pdf-precheck summary ===
+{
+  "ranAt": "2026-09-30T00:51:23+09:00",
+  "wallClockMs": 6425,
+  "folderUrl": "https://drive.google.com/drive/folders/1KLPHBaAp7fIAJBPegTMChOMYAlPKioqt",
+  "results": [
+    {
+      "variant": "A_webfont",
+      "label": "@font-face Noto Sans JP + base64画像 + A4 CSS",
+      "htmlBytes": 3051,
+      "pdfBytes": 244208,
+      "convertMs": 9,
+      "saveMs": 1895,
+      "totalMs": 1904,
+      "within10s": true,
+      "pdfUrl": "https://drive.google.com/file/d/1qkE75oGKAOXyaDnR0iBzt2rEWLWIBlUw/view?usp=drivesdk"
+    },
+    {
+      "variant": "B_nofont",
+      "label": "Webフォント指定なし（既定フォント）+ base64画像 + A4 CSS",
+      "htmlBytes": 2871,
+      "pdfBytes": 88322,
+      "convertMs": 4,
+      "saveMs": 1761,
+      "totalMs": 1765,
+      "within10s": true,
+      "pdfUrl": "https://drive.google.com/file/d/1smJ0QLpAPl0waW9_P2zhAKGWvGZzT9MZ/view?usp=drivesdk"
+    }
+  ]
+}
+0:51:30	お知らせ	実行完了

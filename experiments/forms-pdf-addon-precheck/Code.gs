@@ -18,7 +18,7 @@
  *   - base64 画像（右上の朱色の角印）が描画されているか
  *   - A4 レイアウトが崩れていないか（本文下の「用紙幅の目安」の線が横幅いっぱいなら A4 判定）
  *
- * このスクリプトは DriveApp.createFolder / createFile しか使わない。
+ * 保存は Drive 高度なサービス v3（Drive.Files.create）のみ。DriveApp は drive.file 単独では createFolder できないため（2026-09-30 実測）。
  * appsscript.json の oauthScopes は仕様書 §4-2 の最小構成をそのまま列挙してあるので、
  * 初回実行時の同意画面に出る文言もあわせて記録しておくこと（確認1の補助資料になる）。
  */
@@ -35,7 +35,8 @@ var VARIANTS = [
 function runPdfCheck() {
   var startedAt = new Date();
   var folderName = 'forms-pdf-precheck_' + Utilities.formatDate(startedAt, 'Asia/Tokyo', 'yyyyMMdd-HHmmss');
-  var folder = DriveApp.createFolder(folderName);
+  // DriveApp.createFolder は drive.file 単独では不可（要 auth/drive。2026-09-30 実測）→ Drive 高度なサービス v3 で作成
+  var folder = Drive.Files.create({ name: folderName, mimeType: 'application/vnd.google-apps.folder' }, null, { fields: 'id,webViewLink' });
   var results = [];
 
   VARIANTS.forEach(function (v) {
@@ -49,10 +50,10 @@ function runPdfCheck() {
     var convertMs = Date.now() - t0;
 
     var t1 = Date.now();
-    var pdfFile = folder.createFile(pdf.setName('precheck_' + v.key + '.pdf'));
+    var pdfFile = Drive.Files.create({ name: 'precheck_' + v.key + '.pdf', parents: [folder.id] }, pdf, { fields: 'id,webViewLink' });
     var saveMs = Date.now() - t1;
 
-    folder.createFile('source_' + v.key + '.html', html, 'text/html');
+    Drive.Files.create({ name: 'source_' + v.key + '.html', parents: [folder.id] }, Utilities.newBlob(html, 'text/html', 'source_' + v.key + '.html'), { fields: 'id,webViewLink' });
 
     var r = {
       variant: v.key,
@@ -63,7 +64,7 @@ function runPdfCheck() {
       saveMs: saveMs,
       totalMs: convertMs + saveMs,
       within10s: convertMs + saveMs <= 10000,
-      pdfUrl: pdfFile.getUrl()
+      pdfUrl: pdfFile.webViewLink
     };
     results.push(r);
     console.log(JSON.stringify(r));
@@ -72,7 +73,7 @@ function runPdfCheck() {
   var summary = {
     ranAt: Utilities.formatDate(startedAt, 'Asia/Tokyo', "yyyy-MM-dd'T'HH:mm:ssXXX"),
     wallClockMs: Date.now() - startedAt.getTime(),
-    folderUrl: folder.getUrl(),
+    folderUrl: folder.webViewLink,
     results: results
   };
   Logger.log('=== forms-pdf-precheck summary ===\n' + JSON.stringify(summary, null, 2));
