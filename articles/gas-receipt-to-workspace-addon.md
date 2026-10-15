@@ -82,6 +82,8 @@ function nextSerial(date) {
 }
 ```
 
+見本なので、番号は年ごとにしています。
+
 ### HTML から PDF へ
 
 `Utilities.newBlob(html, 'text/html', 名前).getAs('application/pdf')` で PDF になります。日本語はフォントを指定しなくても出ますが、事前の確認では、Web フォント（Noto Sans JP）を読み込んだ HTML は PDF に Noto Sans JP が埋め込まれ、指定しないと MS-PGothic になりました。A4・1 ページ・角印の画像つきで、1 件 0.9〜1.5 秒でした。
@@ -164,8 +166,6 @@ function savePdf(pdfBlob, fileName, folderId) {
 | OAuth のスコープ | 5（うち機密性の高いもの 2） |
 
 自分のフォーム 1 つで使い、書式も自分で直せる人なら、GAS 版で十分だと思います。アドオンにして良かったのは、誰のフォームでもそのまま動き、審査を通す中で権限が最小に整理されたことです。大変だったのは、フォームの中の画面の確認で、ボタンを押しても何も起きない、ダイアログが出ない、といった問題は実際に触ってみるまで分かりませんでした。
-
-Marketplace の審査で商標の書き方を指摘された話は、別の記事に書きます。
 
 ---
 
