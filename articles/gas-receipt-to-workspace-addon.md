@@ -171,3 +171,4 @@ Marketplace の審査で商標の書き方を指摘された話は、別の記�
 
 この記事で作ったアドオン「フォーム回答で領収書・修了証PDF」は、Google Workspace Marketplace で公開しています（自作です）。GAS・アドオン・外注の比べ方はこちらにまとめました。
 https://dev-tools-hub.xyz/blog/google-form-receipt-pdf/?utm_source=zenn&utm_medium=article&utm_content=forms-pdf&utm_campaign=forms-pdf
+
