@@ -11,6 +11,10 @@ published_at: "2026-10-21 20:00"
 **PR**: この記事で紹介しているアドオンは、開発者本人（自分）が作ったものです。最後に紹介のリンクがあります。
 :::
 
+[アドオンを入手する（Google Workspace Marketplace）](https://workspace.google.com/marketplace/app/%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0%E5%9B%9E%E7%AD%94%E3%81%A7%E9%A0%98%E5%8F%8E%E6%9B%B8%E3%83%BB%E4%BF%AE%E4%BA%86%E8%A8%BCpdf/313990033853?utm_source=zenn&utm_medium=article&utm_content=forms-pdf-head&utm_campaign=forms-pdf)
+
+[アドオンの説明と料金](https://dev-tools-hub.xyz/forms-pdf/?utm_source=zenn&utm_medium=article&utm_content=forms-pdf-head&utm_campaign=forms-pdf)
+
 Google フォーム™ の回答から、日本の書式の領収書 PDF を作る。GAS で書けば数十行で動き始めますが、和暦・敬称・税額の端数・重ならない番号まで入れると、だんだん長くなります。さらにそれを「誰でもフォームに入れて使えるアドオン」にすると、権限とドライブへの保存の作りが変わります。
 
 この記事では、GAS 版で必要になる部品と、Workspace アドオンにしたときに変えたところを、実際のコードで書きます。なお、この記事のコードはどれも Claude Code が書いたもので、文中の「書きました」「替えました」もその意味です。
