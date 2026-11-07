@@ -6,6 +6,10 @@ topics: ["chrome拡張機能","個人開発","tver","javascript","動画"]
 published: true
 ---
 
+:::message
+この拡張は公開を終えました（2026 年 11 月）。記事は記録として残しています。
+:::
+
 [](#%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB) はじめに
 
 TVerで見逃し配信を見ていると、いくつか不便に感じることがあります。
@@ -57,10 +61,7 @@ TVerで見逃し配信を見ていると、いくつか不便に感じること�
 [](#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB) インストール
 
 
-- Chrome Web Storeからインストールできます。
-
-
-[https://chromewebstore.google.com/detail/tver-plus-再生速度変更・pip・ショート/ddhjonpmonmjgohicdipicodpmndnjll?authuser=0&hl=ja](https://chromewebstore.google.com/detail/tver-plus-%E5%86%8D%E7%94%9F%E9%80%9F%E5%BA%A6%E5%A4%89%E6%9B%B4%E3%83%BBpip%E3%83%BB%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88/ddhjonpmonmjgohicdipicodpmndnjll?authuser=0&hl=ja)
+- 2026 年 11 月に公開を終えました。
 
 
 [](#%E3%81%BE%E3%81%A8%E3%82%81) まとめ
@@ -68,9 +69,6 @@ TVerで見逃し配信を見ていると、いくつか不便に感じること�
 TVerをもっと快適に視聴したいと思って作りました。
 
 特に再生速度変更とPiPは、一度使うと手放せなくなります。
-
-
-よかったら使ってみてください。
 
 
 [](#%E4%BD%9C%E3%81%A3%E3%81%9F%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BD%EF%BC%882025%E5%B9%B42%E6%9C%88%E7%8F%BE%E5%9C%A8%EF%BC%9A14%E5%80%8B%EF%BC%89) 作った拡張機能（2025年2月現在：14個）
@@ -83,7 +81,6 @@ TVerをもっと快適に視聴したいと思って作りました。
 
 [PromptStash](https://chromewebstore.google.com/detail/ocgkponbnolpgobllplcamfobolbjbcj) - AIプロンプトを保存・管理（19サービス対応）
 
-[DataPick](https://chromewebstore.google.com/detail/epoehadeccangbpjldlbkapnakndbpkf) - Webページからデータを抽出
 
 [SnippetVault](https://chromewebstore.google.com/detail/gnnmjklohcoaiheikefoifiekcnndcdi) - コードスニペット管理
 
@@ -96,8 +93,6 @@ TVerをもっと快適に視聴したいと思って作りました。
 [YouTube Shorts Killer](https://chromewebstore.google.com/detail/bajebpkjihldiceceompbcjgepnbhnni) - YouTubeショートを非表示
 
 [X Detox](https://chromewebstore.google.com/detail/hlaankalmjmaefkcabjcfagnkfhlkpce) - X(Twitter)のノイズを消す
-
-[ZenRead](https://chromewebstore.google.com/detail/adoiakplckmoahmiainobfpmdomnhomj) - 集中読書モード
 
 
 [](#%F0%9F%9B%92-ec%E3%83%BB%E3%81%9B%E3%81%A9%E3%82%8A) 🛒 EC・せどり
@@ -113,7 +108,6 @@ TVerをもっと快適に視聴したいと思って作りました。
 
 [Japanese Font Finder](https://chromewebstore.google.com/detail/ageolfjmheacenbkgiahlkhkogcnocip) - Webサイトの日本語フォントを特定
 
-[TVerPlus](https://chromewebstore.google.com/detail/ddhjonpmonmjgohicdipicodpmndnjll) - TVerの視聴体験を改善
 
 [Yahoo快適](https://chromewebstore.google.com/detail/oeinpjbbingpakilcejimbibfcbbfkkg) - Yahoo!の閲覧体験改善
 

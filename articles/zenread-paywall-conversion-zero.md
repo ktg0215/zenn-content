@@ -7,6 +7,10 @@ published: true
 published_at: "2026-06-24"
 ---
 
+:::message
+この拡張は公開を終えました（2026 年 11 月）。記事は記録として残しています。
+:::
+
 ## はじめに
 
 個人開発でChrome拡張機能を36本CWSで公開しています（2026年6月時点）。その中の一本「ZenRead」というリーダーモード拡張で、ある時期からPro機能を用意し、popupとリーダー画面でPro案内（いわゆるpaywall）を表示するようにしました。
@@ -154,9 +158,8 @@ paywall_shown=26 / upgrade_clicked=0 という数字を見ずに、「機能は�
 
 ## おわりに
 
-ZenRead は無料で全機能ほぼ使えますので、リーダーモードが欲しい方はぜひお試しください。Pro機能は次の30日でA/B/C案のどれかに変わります。
+ZenRead は 2026 年 11 月に公開を終えました。
 
-https://chromewebstore.google.com/detail/zenread/adoiakplckmoahmiainobfpmdomnhomj
 
 S-Hub では他にも36本の Chrome 拡張を公開しています。気が向いたら覗いてみてください。
 

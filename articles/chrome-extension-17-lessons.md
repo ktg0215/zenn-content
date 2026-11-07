@@ -113,7 +113,6 @@ CWSには購入前にインストールする仕組みがないため、「ま�
 
 ランダムなタイミングでアップグレードモーダルを出すのは逆効果。ユーザーが「この機能を使いたいのに使えない」と感じた瞬間にペイウォールを表示すると、転換率が**3倍**になった。
 
-[DataPick — Chrome Web Store](https://chromewebstore.google.com/detail/epoehadeccangbpjldlbkapnakndbpkf)
 
 ---
 
@@ -148,6 +147,5 @@ CWSには購入前にインストールする仕組みがないため、「ま�
 ### 関連リンク
 
 - [Procshot](https://chromewebstore.google.com/detail/procshot) — ブラウザ操作を自動キャプチャ
-- [DataPick](https://chromewebstore.google.com/detail/epoehadeccangbpjldlbkapnakndbpkf) — Webデータ抽出
 - [ReadMark](https://chromewebstore.google.com/detail/inejhohffndeacbihghjcobndpoejdfn) — 読書位置を保存
 - [CookieJar](https://chromewebstore.google.com/detail/lhngfkchfepfjjdfhimconagoejemofg) — Cookie管理・プライバシー分析

@@ -6,6 +6,10 @@ topics: ["chrome拡張機能", "スクレイピング", "googlesheets", "nocode"
 published: true
 ---
 
+:::message
+この拡張は公開を終えました（2026 年 11 月）。記事は記録として残しています。
+:::
+
 ## はじめに
 
 「Webページのデータをスプレッドシートにまとめたい」
@@ -16,7 +20,6 @@ published: true
 
 そんな方のために、ポイント&クリックの直感操作でWebデータを抽出し、Google Sheetsへ直接エクスポートできるChrome拡張機能「DataPick」を開発しました。
 
-https://chromewebstore.google.com/detail/datapick/epoehadeccangbpjldlbkapnakndbpkf
 
 ## DataPickでできること
 
@@ -84,6 +87,5 @@ ECサイトやSaaSの料金ページから商品名・価格を定期的に収�
 
 DataPickはコードを書かずにWebデータをGoogle Sheetsへ自動連携できる実用的なツールです。マーケター・リサーチャー・非エンジニアのビジネスパーソンが、データ収集の手間を大幅に削減できます。
 
-https://chromewebstore.google.com/detail/datapick/epoehadeccangbpjldlbkapnakndbpkf
 
 S-Hubが提供する他のChrome拡張機能はこちら：https://dev-tools-hub.xyz

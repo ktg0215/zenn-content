@@ -6,6 +6,10 @@ topics: ["chrome拡張機能", "react", "typescript", "readability", "webspeecha
 published: true
 ---
 
+:::message
+この拡張は公開を終えました（2026 年 11 月）。記事は記録として残しています。
+:::
+
 ## はじめに
 
 技術記事やニュースをブラウザで読んでいるとき、本文に集中できないことはないでしょうか。
@@ -16,7 +20,6 @@ SafariやFirefoxにはネイティブのリーダーモードが搭載されて�
 
 ないなら作ろう。そう考えてChrome拡張機能「ZenRead」を開発しました。
 
-https://chromewebstore.google.com/detail/zenread/adoiakplckmoahmiainobfpmdomnhomj
 
 ## ZenReadの機能
 
@@ -99,6 +102,5 @@ ZenReadは「Chromeにリーダーモードが欲しい」という純粋な動�
 
 日々の情報収集・学習に活用していただければ幸いです。
 
-https://chromewebstore.google.com/detail/zenread/adoiakplckmoahmiainobfpmdomnhomj
 
 S-Hubが提供する他のChrome拡張機能はこちら：https://dev-tools-hub.xyz

@@ -7,6 +7,10 @@ published: true
 published_at: "2026-06-26"
 ---
 
+:::message
+この拡張は公開を終えました（2026 年 11 月）。記事は記録として残しています。
+:::
+
 ## 30日間、誰にもpaywallが表示されていなかった
 
 DataPick というデータ収集拡張がある。Webページのデータをクリックだけで Google Sheets に流し込める、ノーコードのスクレイピング拡張だ。月間で **342人** が使い、7日間でポップアップは **25回** 開かれている。それなりに使われている。
@@ -144,8 +148,7 @@ chrome.alarms.onAlarm.addListener(handler);
 
 人に使われているのに売上が立たない時、原因が「課金導線が弱い」ではなく「課金導線が存在しない」だったというのは、笑えないがよくある話だ。まず自分の拡張の `paywall_shown` が0でないかを確認してほしい。
 
-DataPick はこちらで配布している。
-https://chromewebstore.google.com/detail/epoehadeccangbpjldlbkapnakndbpkf
+DataPick は 2026 年 11 月に公開を終えた。
 
 ---
 

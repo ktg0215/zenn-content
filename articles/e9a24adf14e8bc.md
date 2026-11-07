@@ -106,7 +106,6 @@ YouTubeを開いても、普通の動画だけが並んでいる。昔のYouTube
 
 [PromptStash](https://chromewebstore.google.com/detail/ocgkponbnolpgobllplcamfobolbjbcj) - AIプロンプトを保存・管理（19サービス対応）
 
-[DataPick](https://chromewebstore.google.com/detail/epoehadeccangbpjldlbkapnakndbpkf) - Webページからデータを抽出
 
 [SnippetVault](https://chromewebstore.google.com/detail/gnnmjklohcoaiheikefoifiekcnndcdi) - コードスニペット管理
 
@@ -119,8 +118,6 @@ YouTubeを開いても、普通の動画だけが並んでいる。昔のYouTube
 [YouTube Shorts Killer](https://chromewebstore.google.com/detail/bajebpkjihldiceceompbcjgepnbhnni) - YouTubeショートを非表示
 
 [X Detox](https://chromewebstore.google.com/detail/hlaankalmjmaefkcabjcfagnkfhlkpce) - X(Twitter)のノイズを消す
-
-[ZenRead](https://chromewebstore.google.com/detail/adoiakplckmoahmiainobfpmdomnhomj) - 集中読書モード
 
 
 [](#%F0%9F%9B%92-ec%E3%83%BB%E3%81%9B%E3%81%A9%E3%82%8A) 🛒 EC・せどり
@@ -136,7 +133,6 @@ YouTubeを開いても、普通の動画だけが並んでいる。昔のYouTube
 
 [Japanese Font Finder](https://chromewebstore.google.com/detail/ageolfjmheacenbkgiahlkhkogcnocip) - Webサイトの日本語フォントを特定
 
-[TVerPlus](https://chromewebstore.google.com/detail/ddhjonpmonmjgohicdipicodpmndnjll) - TVerの視聴体験を改善
 
 [Yahoo快適](https://chromewebstore.google.com/detail/oeinpjbbingpakilcejimbibfcbbfkkg) - Yahoo!の閲覧体験改善
 
