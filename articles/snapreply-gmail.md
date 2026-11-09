@@ -6,6 +6,10 @@ topics: ["chrome拡張機能", "gmail", "typescript", "react", "productivity"]
 published: true
 ---
 
+:::message
+この拡張は公開を終えました（2026 年 11 月）。記事は記録として残しています。
+:::
+
 > 2026-10 追記: 最新の使い方は、Gmail の標準テンプレート／GAS／拡張の 3 つを比べた記事にまとめました → https://zenn.dev/ktg/articles/gmail-teikeibun-3-ways
 
 ## はじめに
@@ -17,8 +21,6 @@ published: true
 Gmailには「テンプレート」機能（旧・定型文）がありますが、挿入までの操作が多く、テンプレートを探す手間もかかります。
 
 この課題を解決するために、Gmail上でワンクリック・テンプレート返信ができるChrome拡張機能「SnapReply for Gmail」を開発しました。
-
-https://chromewebstore.google.com/detail/snapreply-for-gmail/pijandokkbhdejnoienhjmoicjapgpmk
 
 ## SnapReplyでできること
 
@@ -84,7 +86,5 @@ Gmailはcontenteditable要素に独自の処理をしているため、単純な
 ## まとめ
 
 SnapReply for GmailはGmail上でのテンプレート返信を極限まで効率化するツールです。インストールして最初の5分でテンプレートを登録すれば、すぐに効果を実感できます。
-
-https://chromewebstore.google.com/detail/snapreply-for-gmail/pijandokkbhdejnoienhjmoicjapgpmk
 
 S-Hubが提供する他のChrome拡張機能はこちら：https://dev-tools-hub.xyz
