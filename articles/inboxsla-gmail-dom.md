@@ -6,7 +6,11 @@ topics: ["chrome拡張機能", "typescript", "gmail", "個人開発", "webdev"]
 published: true
 ---
 
-フリーランスやクライアントワークをしていると、「あのメール、いつ返信すればいいんだっけ」問題が地味に発生します。有料のSLAツールを個人で使うのは大げさなので、Gmailのスレッドに直接SLA残時間バッジを表示するChrome拡張「[InboxSLA](https://chromewebstore.google.com/detail/fooenikjagbabhodgpohljldfbpggagi)」を作りました。今回はGmail DOMの解析とMutationObserverの実装を中心に書きます。
+:::message
+この拡張機能は 2026 年 11 月に公開を終えました。記事は実装の記録として残します。
+:::
+
+フリーランスやクライアントワークをしていると、「あのメール、いつ返信すればいいんだっけ」問題が地味に発生します。有料のSLAツールを個人で使うのは大げさなので、Gmailのスレッドに直接SLA残時間バッジを表示するChrome拡張「InboxSLA」を作りました。今回はGmail DOMの解析とMutationObserverの実装を中心に書きます。
 
 ## GmailのDOM解析が難しい理由
 
@@ -112,7 +116,3 @@ observer.observe(document.body, { childList: true, subtree: true });
 ## クライアント設定の管理
 
 どのドメインのメールに何時間のSLAを設定するかは、拡張のポップアップ画面でユーザーが設定します。設定は `chrome.storage.sync` に保存しているので、PCが変わっても引き継がれます。コンテンツスクリプトは起動時にバックグラウンドスクリプト経由で設定を取得し、以後は5分に1回リフレッシュします。
-
----
-
-https://dev-tools-hub.xyz/extensions/inboxsla/
